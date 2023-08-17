@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Fashion Style</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font lato and frank ruhl libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;900&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+       <!-- custom styles -->
+    <style>
+        .font-lato, .font-frank_ruhl_libre{
+            font-family: 'Frank Ruhl Libre', serif;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-lato">
+    <header class="mx-auto my-12 bg-orange-200">
+        <nav class="container mx-auto">
+            <div class="navbar bg-orange-200">
+                    <div class="navbar-start mx-40">
+                        <a class="btn btn-ghost normal-case text-4xl font-bold">FIFASH</a>
+                    </div>
+                    <div class="navbar-center">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </label>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                               <li><a>Men</a></li>
+                               <li><a>Women</a></li>
+                               <li><a>Kids</a></li>
+                               <li><a>Collection</a></li>
+                               <li><a>Trends</a></li>
+                            </ul>
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                            <ul class="menu menu-horizontal text-xs font-bold px-1">
+                              <li><a>Men</a></li>
+                              <li><a>Women</a></li>
+                              <li><a>Kids</a></li>
+                              <li><a>Collection</a></li>
+                              <li><a>Trends</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="navbar-end mx-48">
+                    <div class="flex-none">
+                        <div class="dropdown dropdown-end mx-auto">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">
+                                <div class="indicator">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+                                        <path d="M5.25 6.83325L1 12.4999V32.3333C1 33.0847 1.29851 33.8054 1.82986 34.3367C2.36122 34.8681 3.08189 35.1666 3.83333 35.1666H23.6667C24.4181 35.1666 25.1388 34.8681 25.6701 34.3367C26.2015 33.8054 26.5 33.0847 26.5 32.3333V12.4999L22.25 6.83325H5.25Z" stroke="#34251F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1 12.5H26.5" stroke="#34251F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19.4166 18.1667C19.4166 19.6696 18.8196 21.111 17.7569 22.1737C16.6942 23.2364 15.2529 23.8334 13.75 23.8334C12.2471 23.8334 10.8057 23.2364 9.74304 22.1737C8.68033 21.111 8.08331 19.6696 8.08331 18.1667" stroke="#34251F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="28.75" cy="8" r="8" fill="#C20A0A"/>
+                                        <path d="M27.2553 10.0782H28.4342V7.0535C28.4342 6.90535 28.4384 6.75034 28.4468 6.58848L27.7521 7.15226C27.7072 7.18793 27.6623 7.21399 27.6174 7.23045C27.5725 7.24417 27.5289 7.25103 27.4868 7.25103C27.4139 7.25103 27.3479 7.23594 27.2889 7.20576C27.2328 7.17284 27.1907 7.13855 27.1626 7.10288L26.75 6.5679L28.6616 5H29.7395V10.0782H30.75V11H27.2553V10.0782Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </label>
+                            <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                                <div class="card-body">
+                                      <span class="font-bold text-lg">8 Items</span>
+                                      <span class="text-info">Subtotal: $999</span>
+                                    <div class="card-actions">
+                                      <button class="btn btn-primary btn-block">View cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div>
+                          <a class="btn bg-orange-200">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero min-h-screen bg-orange-200">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-48 mx-48">
+              <img src="./images/banner.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <h1 class="text-5xl font-bold">Find The Best Fashion Style For You </h1>
+                <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn bg-black text-white">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <section>
+            <div class="hero min-h-screen bg-white">
+                <div class="hero-content flex-col lg:flex-col-reverse mx-28 my-16">
+                    <div class="flex gap-4">
+                    <img src="./images/Rectangle 1.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    <img src="./images/Rectangle 2.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    <img src="./images/Rectangle 3.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    </div>
+                  <div>
+                    <h1 class="text-5xl font-bold text-center">Collection</h1>
+                    <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="mx-48 my-28 relative">
+          <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row gap-10">
+              <img src="./images/Rectangle 4.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <h1 class="text-5xl font-bold">Best Fashion Since 2014</h1>
+                <p class="text-xl font-normal py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute top-3/4 right-20 flex gap-12 bg-yellow-400 w-=3/5">
+            <div class="flex-col text-center">
+              <h2 class="text-5xl font-bold">2014</h2>
+              <p class="text-xl font-normal">Fifash Founded</p>
+            </div>
+            <hr class="flex-col text-base">
+            <div class="flex-col text-center">
+              <h2 class="text-5xl font-bold">8900+</h2>
+              <p class="text-xl font-normal">Product Sold</p>
+            </div>
+            <div class="flex-col text-center">
+              <h2 class="text-5xl font-bold">3100+</h2>
+              <p class="text-xl font-normal">Best Reviews</p>
+            </div>
+        </section>
+        <section>
+          <div class="hero min-h-screen bg-yellow-950 flex gap-4">
+            <div class="hero-content flex-col lg:flex-row">
+              <div class="text-stone-200 text-left mx-20 my-14">
+                <h1 class="text-5xl font-bold">Best Seller Product</h1>
+                <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="btn bg-yellow-950 text-stone-200">Login</button>
+              </div>
+              </div class="flex gap-4">
+                  <div class="bg-white rounded-lg w-3/4">
+                    <img src="./images/Rectangle 5.png" alt="Drink" />
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2>Pastel Langue Sleeve</h2>
+                    <p>$220 <span>$180</span></p>
+                  </div>
+                  <div class="bg-white rounded-lg w-3/4">
+                    <img src="./images/Rectangle 6.png" alt="Drink" />
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2>Pastel Langue Sleeve</h2>
+                    <p>$220 <span>$180</span></p>
+                  </div>
+                    <img src="./images/Rectangle 7.png" alt="Drink" />
+              <div>
+            </div>
+          </div>
+        </section>
+        <section class="mx-40 my-32">
+          <h1 class="text-5xl font-bold text-center mb-4">Our Product</h1>
+          <div class="flex list-none mb-4 text-2xl font-normal justify-center gap-20">
+            <li><a><b>HOT<hr></b></a></li>
+            <li>ON SALE</li>
+            <li>TRENDING NOW</li>
+            <li>NEW ARRIVAL</li>
+          </div>
+
+        <div class="flex-col space-y-8">
+          <div class="flex text-center">
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 8.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 9.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 10.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 11.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+          </div>
+          <div class="flex text-center">
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 12.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 13.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 14.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+            <div class="bg-white rounded-lg w-3/4">
+              <img src="./images/Rectangle 15.png" alt="Drink" />
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2>Pastel Langue Sleeve</h2>
+              <p>$220 <span>$180</span></p>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="bg-amber-700 h-96">
+          <div class="flex gap-5 mx-40 my-32">
+            <div class="text-left mt-8 mb-8 space-y-4">
+                <h3 class="text-5xl font-extrabold mb-6">Deal of the day</h3>
+                <p class="text-base font-medium mb-12 lg:w-3/5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                  <div class="flex flex-col p-2 bg-black rounded-box text-neutral-content">
+                    <span class="countdown font-mono text-5xl">
+                      <span style="--value:03;"></span>
+                    </span>
+                    days
+                  </div> 
+                  <div class="flex flex-col p-2 bg-black rounded-box text-neutral-content">
+                    <span class="countdown font-mono text-5xl">
+                      <span style="--value:08;"></span>
+                    </span>
+                    hours
+                  </div> 
+                  <div class="flex flex-col p-2 bg-black rounded-box text-neutral-content">
+                    <span class="countdown font-mono text-5xl">
+                      <span style="--value:09;"></span>
+                    </span>
+                    min
+                  </div> 
+                </div>
+                <button class="btn bg-black text-white">SHOP NOW</button>
+            </div>
+            <div class="-right-5">
+              <img src="./images/Rectangle 18.png" alt="">
+            </div>
+          </div>
+        
+        </section>
+
+        <section class="mx-32 my-32">
+          <h1 class="text-5xl font-bold text-center mb-16">What People say about Us</h1>
+
+          <div class="carousel carousel-end rounded-box gap-6">
+            <div class="carousel-item">
+              <div class="card w-96 bg-orange-200 shadow-xl">
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Amet minim mollit non deserunt ullamco </h2>
+                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <figure class="px-10 pt-2">
+                  <img src="./images/Ellipse 6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="text-center">
+                  <h2>Anisa zahra</h2>
+                  <p>Custumer</p>
+                </div>
+              </div>
+            </div> 
+
+            <div class="carousel-item">
+              <div class="card w-96 bg-orange-200 shadow-xl">
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Amet minim mollit non deserunt ullamco </h2>
+                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <figure class="px-10 pt-2">
+                  <img src="./images/Ellipse 6(1).png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="text-center">
+                  <h2>Anisa zahra</h2>
+                  <p>Custumer</p>
+                </div>
+              </div>
+            </div> 
+
+            <div class="carousel-item">
+              <div class="card w-96 bg-orange-200 shadow-xl">
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Amet minim mollit non deserunt ullamco </h2>
+                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <figure class="px-10 pt-2">
+                  <img src="./images/Ellipse 6 (2).png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="text-center">
+                  <h2>Anisa zahra</h2>
+                  <p>Custumer</p>
+                </div>
+              </div>
+            </div> 
+        </section>
+    </main>
+</body>
+</html>
